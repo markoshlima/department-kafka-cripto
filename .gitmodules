@@ -1,0 +1,12 @@
+[submodule "departmentproducer"]
+	path = departmentproducer
+	url = https://github.com/markoshlima/departmentproducer.git
+[submodule "financeconsumer"]
+	path = financeconsumer
+	url = https://github.com/markoshlima/financeconsumer.git
+[submodule "salesconsumer"]
+	path = salesconsumer
+	url = https://github.com/markoshlima/salesconsumer.git
+[submodule "lambda-creator-data"]
+	path = lambda-creator-data
+	url = https://github.com/markoshlima/lambda-creator-data.git

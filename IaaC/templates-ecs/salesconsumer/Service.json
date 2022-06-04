@@ -1,0 +1,15 @@
+{
+    "Type" : "AWS::ECS::Service",
+    "Properties" : {
+        "Cluster" : "ecs-cluster",
+        "DeploymentConfiguration" : {
+          "MaximumPercent" : 100,
+          "MinimumHealthyPercent" : 200
+        },
+        "DesiredCount" : 1,
+        "HealthCheckGracePeriodSeconds" : 100,
+        "ServiceName" : "salesconsumerservice",
+        "TaskDefinition" : "salesconsumer"
+      }
+  }
+  

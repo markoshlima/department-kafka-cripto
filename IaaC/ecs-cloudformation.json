@@ -1,0 +1,13 @@
+{
+    "ECSCluster": {
+        "Type": "AWS::ECS::Cluster",
+        "Properties": {
+            "ClusterName": "ecs-cluster",
+            "Configuration": {
+                "ExecuteCommandConfiguration": {
+                    "Logging": "DEFAULT"
+                }
+            }
+        }
+    }
+}

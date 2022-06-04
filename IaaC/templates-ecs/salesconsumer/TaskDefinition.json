@@ -1,0 +1,22 @@
+{
+    "Type":"AWS::ECS::TaskDefinition",
+    "Properties":{
+       "ContainerDefinitions":{
+          "Cpu":0,
+          "Image":"<ECR URI>",
+          "LogConfiguration":{
+             "logDriver":"awslogs",
+             "options":{
+                "awslogs-group":"/ecs/salesconsumer",
+                "awslogs-region":"<REGION>",
+                "awslogs-stream-prefix":"ecs"
+             }
+          },
+          "MemoryReservation":128,
+          "Name":"salesconsumer"
+       },
+       "Cpu":"256",
+       "Family":"salesconsumer",
+       "Memory":"256"
+    }
+ }

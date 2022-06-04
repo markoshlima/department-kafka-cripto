@@ -1,0 +1,16 @@
+{
+  "Type" : "AWS::MSK::Cluster",
+  "Properties" : {
+    "BrokerNodeGroupInfo": {
+        "InstanceType": "kafka.t3.small",
+        "ClientSubnets": [
+          "SubnetId1",
+          "SubnetId2",
+          "SubnetId3"
+        ]
+      },
+      "ClusterName" : "msk-cluster",
+      "KafkaVersion" : "2.6.2",
+      "NumberOfBrokerNodes" : 3
+    }
+}
